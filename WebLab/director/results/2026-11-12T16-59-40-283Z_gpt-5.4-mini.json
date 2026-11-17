@@ -1,0 +1,3874 @@
+{
+  "summary": {
+    "model": "gpt-5.4-mini",
+    "cases": 83,
+    "passed": 82,
+    "critical": 1,
+    "errors": 0,
+    "seconds": {
+      "median": 1.33,
+      "p90": 1.9,
+      "max": 4.95
+    },
+    "tokens": {
+      "input": 2644,
+      "cached": 1801,
+      "output": 87,
+      "reasoning": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "v2-make-nothing-planted",
+      "said": "Can you make version two?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.68,
+      "usage": {
+        "input_tokens": 2983,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3081
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make v2. I’ll read the planted changes back.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-ko",
+      "said": "버전 2 만들자",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.384,
+      "usage": {
+        "input_tokens": 2983,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3079
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make v2.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-with-fixer-ko",
+      "said": "v2 만들어줘, 픽서 깃발로",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.781,
+      "usage": {
+        "input_tokens": 2989,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3067
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thanks",
+      "said": "Thanks!",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.041,
+      "usage": {
+        "input_tokens": 2979,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3035
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thanks-ja",
+      "said": "ありがとう",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.149,
+      "usage": {
+        "input_tokens": 2978,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3034
+      },
+      "reply": {
+        "lang": "ja",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-cute",
+      "said": "Wow, that's so cute",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.411,
+      "usage": {
+        "input_tokens": 2911,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2968
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thinking",
+      "said": "Hmm, let me think",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.868,
+      "usage": {
+        "input_tokens": 2911,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2968
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-answer-hot",
+      "said": "Yes, hot coffee",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.078,
+      "usage": {
+        "input_tokens": 2940,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 76,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3016
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Yes. I’d print this in PETG.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Hot coffee every day: print in PETG"
+      }
+    },
+    {
+      "id": "v2-answer-hot-es",
+      "said": "sí, café caliente todos los días",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.376,
+      "usage": {
+        "input_tokens": 2943,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 81,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3024
+      },
+      "reply": {
+        "lang": "es",
+        "intent": "answer",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Yes, hot coffee. Then we should think heat, not just shape.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Hot coffee every day: print in PETG"
+      }
+    },
+    {
+      "id": "v2-answer-which",
+      "said": "Fixer's base",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.69,
+      "usage": {
+        "input_tokens": 2935,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3041
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's take Fixer's base. Safer on the desk.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster v2: thicker base"
+      }
+    },
+    {
+      "id": "v2-own-flag",
+      "said": "Add a handle on the side",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 2.944,
+      "usage": {
+        "input_tokens": 2912,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3015
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_flag",
+            "text": "Add a handle on the side",
+            "index": -1,
+            "who": "none",
+            "part": "side",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's add a side handle.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Add a handle on the side"
+      }
+    },
+    {
+      "id": "v2-own-flag-request",
+      "said": "Can you add a little notch for a tea bag?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.265,
+      "usage": {
+        "input_tokens": 2917,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 107,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3024
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_flag",
+            "text": "Add a little notch for a tea bag",
+            "index": -1,
+            "who": "none",
+            "part": "top",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's add a tea bag notch on top.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Tea bag notch on top"
+      }
+    },
+    {
+      "id": "v2-taller-number",
+      "said": "Make it 2 cm taller",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.9,
+      "usage": {
+        "input_tokens": 2912,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3012
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "taller",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "height",
+            "mm": 34
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Let's make v2 34 mm taller.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-bigger",
+      "said": "A bit bigger",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.309,
+      "usage": {
+        "input_tokens": 2909,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 101,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3010
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "bigger",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "all",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make v2 bigger.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-taller-es",
+      "said": "¿Puedes hacerlo un poco más alto?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.179,
+      "usage": {
+        "input_tokens": 2914,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3017
+      },
+      "reply": {
+        "lang": "es",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "taller",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "height",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make it a bit taller.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster v2: a bit taller"
+      }
+    },
+    {
+      "id": "v2-take-spark",
+      "said": "I like Spark's idea",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.237,
+      "usage": {
+        "input_tokens": 2911,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 102,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3013
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Spark",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Spark",
+            "text": "Nice. I’ll pin the leaf idea on v2.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Leaf on the rim"
+      }
+    },
+    {
+      "id": "v2-flag-question",
+      "said": "What does Fixer's flag mean?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.941,
+      "usage": {
+        "input_tokens": 2913,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2981
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "It means a thicker base so it tips less.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-print-question",
+      "said": "Is it going to print okay?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.126,
+      "usage": {
+        "input_tokens": 2913,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 94,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3007
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "print_check",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "I'll check the print risks now.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-print",
+      "said": "Print it",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.373,
+      "usage": {
+        "input_tokens": 2908,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2996
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "print",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's print it.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-notes",
+      "said": "Show me the notes",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.192,
+      "usage": {
+        "input_tokens": 2910,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3001
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "open_notebook",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's open the notes.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-compare",
+      "said": "Which one is better, v1 or v2?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.193,
+      "usage": {
+        "input_tokens": 2917,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3004
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "team",
+        "actions": [
+          {
+            "tool": "crew_opinions",
+            "text": "Which is better, v1 or v2?",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-paint-how",
+      "said": "How do I paint it?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.972,
+      "usage": {
+        "input_tokens": 2912,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2987
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "show_tape",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-how-big",
+      "said": "How big is v2?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.261,
+      "usage": {
+        "input_tokens": 2912,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2985
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "V2 is 96 by 14 by 96 millimetres.",
+            "gesture": "none"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-start-over",
+      "said": "Let's make something else",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.382,
+      "usage": {
+        "input_tokens": 2910,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2998
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_over",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Start a new project"
+      }
+    },
+    {
+      "id": "v2-what-change",
+      "said": "What should I change?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.052,
+      "usage": {
+        "input_tokens": 2911,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2984
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "Which change goes on v2?",
+          "options": [
+            "Add a little leaf on the rim",
+            "Thicker base, less tipping",
+            "Make it a bit taller"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-fetch-colour",
+      "said": "Spark, get the colour of my keyboard",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.332,
+      "usage": {
+        "input_tokens": 2914,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3013
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "fetch_colour",
+            "text": "my keyboard",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Spark",
+            "text": "Got it. I’ll take your keyboard’s colour.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-noise",
+      "said": "uh the the",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.31,
+      "usage": {
+        "input_tokens": 2909,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2986
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "unclear",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "What would you like to do next?",
+          "options": [
+            "Add a change",
+            "Print it now",
+            "Open notebook"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-not-for-crew",
+      "said": "No, I was talking to my mom",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.116,
+      "usage": {
+        "input_tokens": 2914,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2688
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2991
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "unclear",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "shake"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Was that for us?",
+          "options": [
+            "Yes, for the crew",
+            "No, not for you",
+            "Maybe later"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-done",
+      "said": "I'm done",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.63,
+      "usage": {
+        "input_tokens": 2964,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 111,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3075
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2 now. I have two changes ready.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "What we're making: a coaster for my mug"
+      }
+    },
+    {
+      "id": "v2-make-planted",
+      "said": "Okay, make version two",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.484,
+      "usage": {
+        "input_tokens": 2967,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3064
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2. I’ll read the changes back.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-remove-own",
+      "said": "Take off my flag",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.4,
+      "usage": {
+        "input_tokens": 2966,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3061
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "remove_flag",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Removed your flag. Only the crew changes remain.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-remove-fixer-ko",
+      "said": "픽서 깃발은 빼줘",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.725,
+      "usage": {
+        "input_tokens": 2971,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3074
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "remove_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Got it. I’ll remove my flag.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Remove Fixer flag from v2"
+      }
+    },
+    {
+      "id": "v2-confirm-go",
+      "said": "Yeah, go ahead and build it",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.096,
+      "usage": {
+        "input_tokens": 2947,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3046
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "confirm_build",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Build v2 now"
+      }
+    },
+    {
+      "id": "v2-confirm-wait",
+      "said": "Wait, not yet",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.08,
+      "usage": {
+        "input_tokens": 2944,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3034
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "cancel_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Okay. Build paused.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-confirm-question",
+      "said": "Will the notch make it weaker?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 2.155,
+      "usage": {
+        "input_tokens": 2947,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3053
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Yes, a notch can weaken the rim a bit.",
+            "gesture": "nod"
+          },
+          {
+            "who": "Fixer",
+            "text": "Round it, and keep some rim thickness.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Want the notch kept or softened?",
+          "options": [
+            "Keep notch",
+            "Soften notch",
+            "Remove notch"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "made-blue",
+      "said": "Make it blue",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.75,
+      "usage": {
+        "input_tokens": 2583,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2432
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2681
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "change_made",
+            "text": "make it blue",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make it blue.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Color change: blue"
+      }
+    },
+    {
+      "id": "made-printer",
+      "said": "Is this too big for my printer?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.008,
+      "usage": {
+        "input_tokens": 2588,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 93,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2681
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "print_check",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "Want the print check first or the print file?",
+          "options": [
+            "Print check",
+            "Print file",
+            "Both"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "made-great",
+      "said": "It looks great",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.807,
+      "usage": {
+        "input_tokens": 2583,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2432
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2640
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-how-long",
+      "said": "How long will it take?",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.164,
+      "usage": {
+        "input_tokens": 2139,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 66,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2205
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Not sure yet. It’s still carving.",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-how-long-ko",
+      "said": "얼마나 걸려?",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.566,
+      "usage": {
+        "input_tokens": 2139,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1920
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2230
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "모르겠어요. 지금 만들고 있어요.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "원하면 완성되면 바로 보여드릴까요?",
+          "options": [
+            "네, 보여줘",
+            "아니, 나중에"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-change",
+      "said": "Can you make the rim thicker?",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.353,
+      "usage": {
+        "input_tokens": 2140,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1920
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2238
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "queue_change",
+            "text": "Make the rim thicker",
+            "index": -1,
+            "who": "Maker",
+            "part": "rim",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's thicken the rim.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Rim thicker"
+      }
+    },
+    {
+      "id": "making-wow",
+      "said": "Wow, look at it go",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.616,
+      "usage": {
+        "input_tokens": 2139,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1920
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2196
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-what",
+      "said": "What are you doing now?",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.119,
+      "usage": {
+        "input_tokens": 2139,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1920
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2206
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "We’re carving your coaster from the wood block now.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-notes",
+      "said": "Show me the notes",
+      "step": "Making",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.084,
+      "usage": {
+        "input_tokens": 2137,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1920
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2212
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "open_notebook",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-blue-one",
+      "said": "I like the blue one",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.222,
+      "usage": {
+        "input_tokens": 2536,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2631
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "pick_look",
+            "text": "",
+            "index": 2,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's take the navy ribs.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Chosen look: Navy ribs"
+      }
+    },
+    {
+      "id": "looks-not-sure",
+      "said": "Hmm, not sure",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.148,
+      "usage": {
+        "input_tokens": 2535,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2592
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-compare",
+      "said": "Compare them",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.569,
+      "usage": {
+        "input_tokens": 2533,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2612
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "team",
+        "actions": [
+          {
+            "tool": "crew_opinions",
+            "text": "compare them",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-pros-cons",
+      "said": "What are the pros and cons of the green one?",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.455,
+      "usage": {
+        "input_tokens": 2542,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2630
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "team",
+        "actions": [
+          {
+            "tool": "crew_opinions",
+            "text": "What are the pros and cons of the green one?",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-middle",
+      "said": "The middle one",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.052,
+      "usage": {
+        "input_tokens": 2534,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 80,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2614
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "pick_look",
+            "text": "",
+            "index": 1,
+            "who": "Maker",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-redraw",
+      "said": "Can you draw new ones, more colourful?",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.03,
+      "usage": {
+        "input_tokens": 2540,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2619
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "redraw_looks",
+            "text": "more colourful",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-coffee",
+      "said": "Which one would survive hot coffee?",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.069,
+      "usage": {
+        "input_tokens": 2538,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 72,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2610
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Navy ribs is safest. Brass edge needs the least heat help.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-wood-ko",
+      "said": "나무 느낌 나는 걸로 할게",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 4.953,
+      "usage": {
+        "input_tokens": 2539,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2634
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "pick_look",
+            "text": "",
+            "index": 0,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's use Walnut leaves.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster look: walnut leaves"
+      }
+    },
+    {
+      "id": "looks-pin",
+      "said": "Pin them on the wall",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.9,
+      "usage": {
+        "input_tokens": 2536,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 86,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2622
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "pin_looks",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "looks-why-green",
+      "said": "Why is the second one green?",
+      "step": "Looks",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.975,
+      "usage": {
+        "input_tokens": 2538,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2628
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Because it was sketched that way. Want a different colour?",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Want a different colour?",
+          "options": [
+            "Keep the green one",
+            "Change the colour",
+            "Show three new looks"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "measure-how",
+      "said": "How do I measure it?",
+      "step": "Measuring",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.554,
+      "usage": {
+        "input_tokens": 2320,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2411
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Pinch the tape ends with both hands, then pull apart.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Fixer",
+          "text": "What do you want to measure?",
+          "options": [
+            "Mug width",
+            "Mug height",
+            "Mug depth"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "measure-said",
+      "said": "It's about eight and a half centimetres",
+      "step": "Measuring",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.843,
+      "usage": {
+        "input_tokens": 2322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 101,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2423
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "set_size",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 85
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "85 mm. Good mug size.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Mug coaster size: 85 mm"
+      }
+    },
+    {
+      "id": "measure-guess",
+      "said": "Use your guess",
+      "step": "Measuring",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.534,
+      "usage": {
+        "input_tokens": 2317,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2415
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "use_guess",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Using 82 mm. Good start for the mug.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "measure-again",
+      "said": "That's wrong, let me do it again",
+      "step": "Measuring",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.551,
+      "usage": {
+        "input_tokens": 2322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2413
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "measure_again",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Let's measure again.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "measure-why",
+      "said": "Why do you need the size?",
+      "step": "Measuring",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.335,
+      "usage": {
+        "input_tokens": 2321,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2411
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "So it fits your mug and doesn't wobble.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Do you want the coaster sized from the mug, or use my guess?",
+          "options": [
+            "Use the mug size",
+            "Use the guess"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "shape-thinking",
+      "said": "Hmm let me think",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.899,
+      "usage": {
+        "input_tokens": 2486,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2543
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "shape-said",
+      "said": "Round with a little lip",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.127,
+      "usage": {
+        "input_tokens": 2487,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 109,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2596
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "add_shape",
+            "text": "Round with a little lip",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's do a round coaster with a little lip.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster shape: round with a little lip"
+      }
+    },
+    {
+      "id": "shape-you-pick",
+      "said": "You pick",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.124,
+      "usage": {
+        "input_tokens": 2484,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2581
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "crew_picks",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "We’ll choose the shape.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Crew will pick the coaster shape"
+      }
+    },
+    {
+      "id": "shape-what-mean",
+      "said": "What do you mean by shape?",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.109,
+      "usage": {
+        "input_tokens": 2489,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2577
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "You can say the shape, draw it, or say you pick.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Which do you want?",
+          "options": [
+            "I’ll describe it",
+            "I’ll draw it",
+            "You pick"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "shape-this",
+      "said": "Like this one",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.594,
+      "usage": {
+        "input_tokens": 2485,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2588
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "match_thing",
+            "text": "this one",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's copy the shape of this one.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster shape: match this one"
+      }
+    },
+    {
+      "id": "shape-draw",
+      "said": "Can I draw it?",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.258,
+      "usage": {
+        "input_tokens": 2487,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2582
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "draw_myself",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Go ahead. Draw the coaster shape here.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "shape-said-ko",
+      "said": "둥글고 낮게 해줘",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.318,
+      "usage": {
+        "input_tokens": 2490,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2586
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "add_shape",
+            "text": "round and low",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make it round and low.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "shape-thats-all",
+      "said": "That's all",
+      "step": "ShapeInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.286,
+      "usage": {
+        "input_tokens": 2484,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 92,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2576
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "inputs_done",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Got it. Let's move on.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "colour-said",
+      "said": "Navy blue and brass",
+      "step": "ColourInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.397,
+      "usage": {
+        "input_tokens": 2502,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2606
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "add_colour",
+            "text": "navy blue and brass",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's use navy blue and brass.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Colour choice: navy blue and brass"
+      }
+    },
+    {
+      "id": "colour-lamp",
+      "said": "Same colour as my lamp",
+      "step": "ColourInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.316,
+      "usage": {
+        "input_tokens": 2502,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2605
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "match_thing",
+            "text": "my lamp",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Spark",
+            "text": "Ooh, same colour as your lamp.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Use lamp colour for the coaster"
+      }
+    },
+    {
+      "id": "colour-question",
+      "said": "What colours go with walnut?",
+      "step": "ColourInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.514,
+      "usage": {
+        "input_tokens": 2503,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2587
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's choose a colour that fits walnut. Or use your palette.",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Which do you want?",
+          "options": [
+            "Sage",
+            "Cream",
+            "Use my palette"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "colour-palette",
+      "said": "Use my palette",
+      "step": "ColourInput",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 2.829,
+      "usage": {
+        "input_tokens": 2500,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2599
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "use_palette",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Spark",
+            "text": "Nice. I’ll use your palette.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Use the saved palette for the coaster"
+      }
+    },
+    {
+      "id": "start-need",
+      "said": "I want to make a coaster for my mug",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.367,
+      "usage": {
+        "input_tokens": 2401,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 102,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2503
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "set_need",
+            "text": "a coaster for my mug",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make a coaster for your mug.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster for mug"
+      }
+    },
+    {
+      "id": "start-ideas",
+      "said": "What can I make?",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.574,
+      "usage": {
+        "input_tokens": 2397,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2494
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "find_ideas",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "What would you like to make?",
+          "options": [
+            "Something for the desk",
+            "Something for the wall",
+            "Something for a mug"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "start-dont-know",
+      "said": "I don't know",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.317,
+      "usage": {
+        "input_tokens": 2395,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2459
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "You can ask us to find ideas.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "start-who",
+      "said": "Who are you guys?",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.679,
+      "usage": {
+        "input_tokens": 2397,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 81,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2478
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "We help you design and make your object.",
+            "gesture": "wave"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "What do you want to make?",
+          "options": [
+            "A holder",
+            "A container",
+            "Something else"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "start-need-ko",
+      "said": "휴대폰 거치대 만들고 싶어",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.382,
+      "usage": {
+        "input_tokens": 2402,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2498
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "set_need",
+            "text": "a phone stand",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make a phone stand.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Phone stand"
+      }
+    },
+    {
+      "id": "ideas-fixer",
+      "said": "Let's do Fixer's idea",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.584,
+      "usage": {
+        "input_tokens": 2429,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2524
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "pick_idea",
+            "text": "",
+            "index": 2,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's do that one.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Chosen idea: Headphone hook"
+      }
+    },
+    {
+      "id": "ideas-tell-more",
+      "said": "Tell me more about the key tray",
+      "step": "Suggesting",
+      "pass": false,
+      "why": [
+        "forbidden set_need"
+      ],
+      "critical": true,
+      "seconds": 1.807,
+      "usage": {
+        "input_tokens": 2431,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2527
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "set_need",
+            "text": "a key tray",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's do a key tray.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Key tray"
+      }
+    },
+    {
+      "id": "object-none",
+      "said": "I don't have it here",
+      "step": "ForObject",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.55,
+      "usage": {
+        "input_tokens": 2363,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 85,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2448
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "skip_object",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Mug not here: skip measuring for now"
+      }
+    },
+    {
+      "id": "object-there",
+      "said": "Okay, it's in the circle",
+      "step": "ForObject",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.896,
+      "usage": {
+        "input_tokens": 2364,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 74,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2438
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "take_picture",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "object-why",
+      "said": "Why do you need my mug?",
+      "step": "ForObject",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.581,
+      "usage": {
+        "input_tokens": 2365,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2176
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2452
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "We need the mug to fit the coaster properly.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "Please put the mug in the show-me circle.",
+          "options": [
+            "I have the mug",
+            "I do not have it here"
+          ]
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "notebook-close",
+      "said": "Close it",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.428,
+      "usage": {
+        "input_tokens": 2919,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3007
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "close_notebook",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Closed.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "fit-tight",
+      "said": "It was a bit tight",
+      "step": "Suggesting",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.302,
+      "usage": {
+        "input_tokens": 2455,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2558
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "fit_feedback",
+            "text": "tight",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Tight. We can loosen the fit next time.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Coaster fit was tight"
+      }
+    }
+  ]
+}

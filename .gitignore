@@ -1,0 +1,61 @@
+# Local credentials must never be committed.
+/LocalSettings/
+/Server/.env
+/Server/.env.*
+!/Server/.env.example
+node_modules/
+
+# Unity generated files and distributable builds (test APKs may contain credentials).
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.apk
+*.aab
+*.unitypackage
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.vscode/
+.idea/
+.gradle/
+sysinfo.txt
+crashlytics-build.properties
+
+# Test captures and personal data: room photos, device logs, session logs, print outputs, editor test fixtures.
+/Assets/Tests/
+/Assets/Tests.meta
+/Assets/Screenshots/
+/Assets/Screenshots.meta
+/Screenshots/
+/Verification/
+/tmp/
+.utmp/
+.wrangler/
+/WebLab/collections/
+/WebLab/sessions/
+/WebLab/prints/
+
+# Caches and OS files.
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+
+# Design notes, concept boards and feature documents (kept on this machine only).
+/Docs/

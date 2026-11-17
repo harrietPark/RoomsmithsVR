@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "model": "gpt-5.4-mini",
+    "cases": 4,
+    "passed": 4,
+    "critical": 0,
+    "errors": 0,
+    "seconds": {
+      "median": 3.88,
+      "p90": 3.89,
+      "max": 3.89
+    },
+    "tokens": {
+      "input": 2981,
+      "cached": 1408,
+      "output": 100,
+      "reasoning": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "v2-make-nothing-planted",
+      "said": "Can you make version two?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.886,
+      "usage": {
+        "input_tokens": 2983,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3081
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make v2. I’ll read the planted changes back.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-ko",
+      "said": "버전 2 만들자",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.318,
+      "usage": {
+        "input_tokens": 2983,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2816
+        },
+        "output_tokens": 74,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3057
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-with-fixer-ko",
+      "said": "v2 만들어줘, 픽서 깃발로",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.428,
+      "usage": {
+        "input_tokens": 2989,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 133,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3122
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          },
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's use Fixer's change and build v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Use Fixer's change for v2"
+      }
+    },
+    {
+      "id": "v2-make-planted",
+      "said": "Okay, make version two",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.878,
+      "usage": {
+        "input_tokens": 2967,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 94,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3061
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2 from the planted changes.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    }
+  ]
+}

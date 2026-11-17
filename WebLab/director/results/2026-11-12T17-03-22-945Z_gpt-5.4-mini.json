@@ -1,0 +1,2109 @@
+{
+  "summary": {
+    "model": "gpt-5.4-mini",
+    "cases": 83,
+    "passed": 32,
+    "critical": 0,
+    "errors": 51,
+    "seconds": {
+      "median": 1.47,
+      "p90": 1.94,
+      "max": 3.48
+    },
+    "tokens": {
+      "input": 3154,
+      "cached": 2844,
+      "output": 85,
+      "reasoning": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "v2-make-nothing-planted",
+      "said": "Can you make version two?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.548,
+      "usage": {
+        "input_tokens": 3214,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3317
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "I'll read back the planted changes, then wait for yes.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-ko",
+      "said": "버전 2 만들자",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.81,
+      "usage": {
+        "input_tokens": 3214,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3312
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2. I’ll read the planted changes back.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-with-fixer-ko",
+      "said": "v2 만들어줘, 픽서 깃발로",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.804,
+      "usage": {
+        "input_tokens": 3220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3349
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          },
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Fixer's change is on v2. Ready to build.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thanks",
+      "said": "Thanks!",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.248,
+      "usage": {
+        "input_tokens": 3210,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3267
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thanks-ja",
+      "said": "ありがとう",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.221,
+      "usage": {
+        "input_tokens": 3209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3265
+      },
+      "reply": {
+        "lang": "ja",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "none"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-cute",
+      "said": "Wow, that's so cute",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.586,
+      "usage": {
+        "input_tokens": 3142,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3199
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-thinking",
+      "said": "Hmm, let me think",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.971,
+      "usage": {
+        "input_tokens": 3142,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3199
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "tilt"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-answer-hot",
+      "said": "Yes, hot coffee",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.799,
+      "usage": {
+        "input_tokens": 3171,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 76,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3247
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Yes. Then PETG is the safer print.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Hot coffee every day: print in PETG"
+      }
+    },
+    {
+      "id": "v2-answer-hot-es",
+      "said": "sí, café caliente todos los días",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.52,
+      "usage": {
+        "input_tokens": 3174,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3252
+      },
+      "reply": {
+        "lang": "es",
+        "intent": "answer",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Yes, hot coffee. PETG is safer than PLA.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Hot coffee every day: print in PETG"
+      }
+    },
+    {
+      "id": "v2-answer-which",
+      "said": "Fixer's base",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.334,
+      "usage": {
+        "input_tokens": 3166,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3262
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "base",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Fixer's base goes on v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-own-flag",
+      "said": "Add a handle on the side",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.377,
+      "usage": {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3249
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_flag",
+            "text": "Add a handle on the side",
+            "index": -1,
+            "who": "none",
+            "part": "side",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's add a side handle on v2.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Add a handle on the side"
+      }
+    },
+    {
+      "id": "v2-own-flag-request",
+      "said": "Can you add a little notch for a tea bag?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.253,
+      "usage": {
+        "input_tokens": 3148,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 112,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3260
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "idea",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "plant_flag",
+            "text": "Add a little notch for tea bag",
+            "index": -1,
+            "who": "none",
+            "part": "top",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Good idea. I’ll put the notch on the top edge.",
+            "gesture": "idea"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Add a little notch for tea bag"
+      }
+    },
+    {
+      "id": "v2-taller-number",
+      "said": "Make it 2 cm taller",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.461,
+      "usage": {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3241
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "taller",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "height",
+            "mm": 34
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "V2 is 20 mm taller now.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-bigger",
+      "said": "A bit bigger",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 2.243,
+      "usage": {
+        "input_tokens": 3140,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3235
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "bigger",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "all",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's make v2 bigger.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-taller-es",
+      "said": "¿Puedes hacerlo un poco más alto?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.558,
+      "usage": {
+        "input_tokens": 3145,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3229
+      },
+      "reply": {
+        "lang": "es",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "resize_v2",
+            "text": "taller",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "height",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-take-spark",
+      "said": "I like Spark's idea",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.845,
+      "usage": {
+        "input_tokens": 3142,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3242
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Spark",
+        "actions": [
+          {
+            "tool": "plant_crew_flag",
+            "text": "",
+            "index": -1,
+            "who": "Spark",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Spark's leaf goes on v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Leaf detail chosen for v2"
+      }
+    },
+    {
+      "id": "v2-flag-question",
+      "said": "What does Fixer's flag mean?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.124,
+      "usage": {
+        "input_tokens": 3144,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3217
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "It means a thicker base. Less wobble, better with a mug.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-print-question",
+      "said": "Is it going to print okay?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.471,
+      "usage": {
+        "input_tokens": 3144,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3248
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "print_check",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "I’m checking the print now. Thin walls and overhangs will show up.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-print",
+      "said": "Print it",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.122,
+      "usage": {
+        "input_tokens": 3139,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3229
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "print",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's print Sage Hex now.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-notes",
+      "said": "Show me the notes",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.939,
+      "usage": {
+        "input_tokens": 3141,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 93,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3234
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "open_notebook",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Here are the notes so far.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-compare",
+      "said": "Which one is better, v1 or v2?",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "v2-paint-how",
+      "said": "How do I paint it?",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "v2-how-big",
+      "said": "How big is v2?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.341,
+      "usage": {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3216
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "V2 stays 96 by 14 by 96 millimetres so far.",
+            "gesture": "none"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-start-over",
+      "said": "Let's make something else",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 2.666,
+      "usage": {
+        "input_tokens": 3141,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3218
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_over",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": "Start a different project"
+      }
+    },
+    {
+      "id": "v2-what-change",
+      "said": "What should I change?",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.684,
+      "usage": {
+        "input_tokens": 3142,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 82,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3224
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "question",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "crew_opinions",
+            "text": "What should I change?",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-fetch-colour",
+      "said": "Spark, get the colour of my keyboard",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "v2-noise",
+      "said": "uh the the",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.309,
+      "usage": {
+        "input_tokens": 3140,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3186
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "unclear",
+        "to": "Maker",
+        "actions": [],
+        "lines": [],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-not-for-crew",
+      "said": "No, I was talking to my mom",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.234,
+      "usage": {
+        "input_tokens": 3145,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3201
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "shake"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-done",
+      "said": "I'm done",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.468,
+      "usage": {
+        "input_tokens": 3195,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2304
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3291
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's read the changes back, then build version two.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-make-planted",
+      "said": "Okay, make version two",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.585,
+      "usage": {
+        "input_tokens": 3198,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3296
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "start_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Let's build v2. I’ll read back the changes first.",
+            "gesture": "present"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-remove-own",
+      "said": "Take off my flag",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 3.48,
+      "usage": {
+        "input_tokens": 3197,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 92,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3289
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "instruction",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "remove_flag",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Removed your flag from v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-remove-fixer-ko",
+      "said": "픽서 깃발은 빼줘",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.818,
+      "usage": {
+        "input_tokens": 3202,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3072
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3300
+      },
+      "reply": {
+        "lang": "ko",
+        "intent": "instruction",
+        "to": "Fixer",
+        "actions": [
+          {
+            "tool": "remove_flag",
+            "text": "",
+            "index": -1,
+            "who": "Fixer",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Fixer",
+            "text": "Got it. That flag is off v2.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-confirm-go",
+      "said": "Yeah, go ahead and build it",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.168,
+      "usage": {
+        "input_tokens": 3178,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3268
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "confirm_build",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Building v2 now.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-confirm-wait",
+      "said": "Wait, not yet",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 1.269,
+      "usage": {
+        "input_tokens": 3175,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2944
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3266
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "answer",
+        "to": "Maker",
+        "actions": [
+          {
+            "tool": "cancel_confirm",
+            "text": "",
+            "index": -1,
+            "who": "none",
+            "part": "none",
+            "axis": "none",
+            "mm": 0
+          }
+        ],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "Okay. We stop here.",
+            "gesture": "nod"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "v2-confirm-question",
+      "said": "Will the notch make it weaker?",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "made-blue",
+      "said": "Make it blue",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "made-printer",
+      "said": "Is this too big for my printer?",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "made-great",
+      "said": "It looks great",
+      "step": "Done",
+      "pass": true,
+      "why": [],
+      "critical": false,
+      "seconds": 0.733,
+      "usage": {
+        "input_tokens": 2782,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 2560
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2839
+      },
+      "reply": {
+        "lang": "en",
+        "intent": "reaction",
+        "to": "Maker",
+        "actions": [],
+        "lines": [
+          {
+            "who": "Maker",
+            "text": "",
+            "gesture": "cheer"
+          }
+        ],
+        "ask": {
+          "who": "Maker",
+          "text": "",
+          "options": []
+        },
+        "note": ""
+      }
+    },
+    {
+      "id": "making-how-long",
+      "said": "How long will it take?",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "making-how-long-ko",
+      "said": "얼마나 걸려?",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "making-change",
+      "said": "Can you make the rim thicker?",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "making-wow",
+      "said": "Wow, look at it go",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "making-what",
+      "said": "What are you doing now?",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "making-notes",
+      "said": "Show me the notes",
+      "step": "Making",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-blue-one",
+      "said": "I like the blue one",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-not-sure",
+      "said": "Hmm, not sure",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-compare",
+      "said": "Compare them",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-pros-cons",
+      "said": "What are the pros and cons of the green one?",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-middle",
+      "said": "The middle one",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-redraw",
+      "said": "Can you draw new ones, more colourful?",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-coffee",
+      "said": "Which one would survive hot coffee?",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-wood-ko",
+      "said": "나무 느낌 나는 걸로 할게",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-pin",
+      "said": "Pin them on the wall",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "looks-why-green",
+      "said": "Why is the second one green?",
+      "step": "Looks",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "measure-how",
+      "said": "How do I measure it?",
+      "step": "Measuring",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "measure-said",
+      "said": "It's about eight and a half centimetres",
+      "step": "Measuring",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "measure-guess",
+      "said": "Use your guess",
+      "step": "Measuring",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "measure-again",
+      "said": "That's wrong, let me do it again",
+      "step": "Measuring",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "measure-why",
+      "said": "Why do you need the size?",
+      "step": "Measuring",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-thinking",
+      "said": "Hmm let me think",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-said",
+      "said": "Round with a little lip",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-you-pick",
+      "said": "You pick",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-what-mean",
+      "said": "What do you mean by shape?",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-this",
+      "said": "Like this one",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-draw",
+      "said": "Can I draw it?",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-said-ko",
+      "said": "둥글고 낮게 해줘",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "shape-thats-all",
+      "said": "That's all",
+      "step": "ShapeInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "colour-said",
+      "said": "Navy blue and brass",
+      "step": "ColourInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "colour-lamp",
+      "said": "Same colour as my lamp",
+      "step": "ColourInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "colour-question",
+      "said": "What colours go with walnut?",
+      "step": "ColourInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "colour-palette",
+      "said": "Use my palette",
+      "step": "ColourInput",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "start-need",
+      "said": "I want to make a coaster for my mug",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "start-ideas",
+      "said": "What can I make?",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "start-dont-know",
+      "said": "I don't know",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "start-who",
+      "said": "Who are you guys?",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "start-need-ko",
+      "said": "휴대폰 거치대 만들고 싶어",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "ideas-fixer",
+      "said": "Let's do Fixer's idea",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "ideas-tell-more",
+      "said": "Tell me more about the key tray",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "object-none",
+      "said": "I don't have it here",
+      "step": "ForObject",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "object-there",
+      "said": "Okay, it's in the circle",
+      "step": "ForObject",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "object-why",
+      "said": "Why do you need my mug?",
+      "step": "ForObject",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "notebook-close",
+      "said": "Close it",
+      "step": "Done",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    },
+    {
+      "id": "fit-tight",
+      "said": "It was a bit tight",
+      "step": "Suggesting",
+      "pass": false,
+      "critical": false,
+      "why": [
+        "ERROR You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+      ],
+      "seconds": 0,
+      "reply": null
+    }
+  ]
+}

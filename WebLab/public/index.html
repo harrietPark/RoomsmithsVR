@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windups · 일하는 팀</title>
+<style>
+  :root { --bg: #f5f4f0; --panel: #fff; --ink: #1c1c21; --soft: #6c6c77; --line: #e3e1da; --like: #fff1b8; --warn: #c0392b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; }
+  header { display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 16px; margin: 0; flex: 1; }
+  header a { color: var(--soft); font-size: 12.5px; }
+  button { font: inherit; cursor: pointer; }
+  .btn { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 6px 12px; }
+  .btn.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+  main { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 14px; padding: 14px 16px; height: calc(100vh - 54px); }
+  /* The team */
+  .team { display: flex; flex-direction: column; gap: 10px; overflow: auto; }
+  .member { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+  .member .top { display: flex; align-items: center; gap: 10px; }
+  .blob { width: 34px; height: 44px; border-radius: 17px 17px 14px 14px; box-shadow: inset -5px -5px 0 rgba(0,0,0,.13); flex: none; }
+  .member.working .blob { animation: work .35s ease-in-out infinite alternate; }
+  .member.talking .blob { animation: talk .45s ease-in-out infinite alternate; }
+  @keyframes work { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+  @keyframes talk { to { transform: translateY(-5px); } }
+  .member .name { font-weight: 700; }
+  .member .job { font-size: 12px; color: var(--soft); }
+  .status { margin-top: 8px; font-size: 13.5px; min-height: 20px; }
+  .status.working { color: var(--ink); }
+  .status.working::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; margin-right: 6px; animation: spin .8s linear infinite; vertical-align: -1px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .status.said { background: #f6f5f1; border-radius: 10px; padding: 6px 9px; }
+  .queued { font-size: 12px; color: var(--soft); margin-top: 4px; }
+  /* Board and talk */
+  .work { display: flex; flex-direction: column; min-height: 0; gap: 10px; }
+  .board { flex: 1; overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); grid-auto-rows: max-content; gap: 12px; align-content: start; padding-right: 4px; }
+  .empty { grid-column: 1 / -1; color: var(--soft); text-align: center; padding: 60px 20px; }
+  .empty b { color: var(--ink); display: block; font-size: 17px; margin-bottom: 6px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; animation: land .35s ease-out; }
+  @keyframes land { from { transform: translateY(-10px) scale(.97); opacity: 0; } }
+  .card .head { padding: 9px 12px; color: #fff; font-size: 12.5px; display: flex; justify-content: space-between; }
+  .card .title { font-weight: 700; font-size: 15.5px; padding: 10px 12px 2px; }
+  .card .assume { font-size: 12px; color: var(--soft); padding: 0 12px; }
+  .item { padding: 8px 12px; border-top: 1px solid #f0eee8; }
+  .item .n { font-weight: 650; font-size: 14px; }
+  .item .d { font-size: 13.5px; color: #3a3a42; }
+  .item .acts { display: flex; gap: 6px; margin-top: 5px; }
+  .item .acts button { border: 1px solid var(--line); background: #fff; border-radius: 999px; font-size: 12px; padding: 1px 10px; }
+  .item.like { background: var(--like); }
+  .item.like .acts .like, .item.more .acts .more { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .item.drop { opacity: .4; }
+  .item.drop .n { text-decoration: line-through; }
+  .take { padding: 9px 12px; font-size: 13.5px; font-weight: 600; border-top: 1px solid var(--line); background: #faf9f6; }
+  .ask { padding: 0 12px 10px; font-size: 13px; color: var(--soft); background: #faf9f6; }
+  .talk { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 8px 12px; max-height: 140px; overflow: auto; font-size: 13.5px; flex: none; }
+  .talk div { padding: 2px 0; }
+  .talk .me { font-weight: 600; }
+  .talk .err { color: var(--warn); }
+  .composer { display: flex; gap: 8px; flex: none; }
+  .composer textarea { flex: 1; resize: none; height: 46px; border: 1px solid var(--line); border-radius: 12px; padding: 11px 12px; font: inherit; }
+  .mic.rec { background: var(--warn); color: #fff; border-color: var(--warn); }
+  dialog { border: 1px solid var(--line); border-radius: 14px; padding: 18px; width: min(480px, 94vw); }
+  dialog h2 { font-size: 16px; margin: 0 0 10px; }
+  .q { margin: 10px 0; font-size: 14px; }
+  .opts { display: flex; gap: 6px; margin-top: 5px; flex-wrap: wrap; }
+  .opts button { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 3px 12px; }
+  .opts button.on { background: var(--ink); color: #fff; }
+  dialog textarea { width: 100%; height: 60px; border: 1px solid var(--line); border-radius: 8px; padding: 6px; font: inherit; }
+  @media (max-width: 820px) { main { grid-template-columns: 1fr; height: auto; } .team { flex-direction: row; overflow-x: auto; } .member { min-width: 220px; } .board { min-height: 50vh; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Windups · 일하는 팀</h1>
+  <a href="collect/index.html">Roomsmiths 다운로드 미리보기</a>
+  <a href="lab.html">예전 실험실</a>
+  <button class="btn" id="rateBtn">평가</button>
+  <button class="btn" id="newBtn">새로 시작</button>
+</header>
+<main>
+  <div class="team" id="team"></div>
+  <div class="work">
+    <div class="board" id="board"></div>
+    <div class="talk" id="talk"></div>
+    <div class="composer">
+      <textarea id="input" placeholder="아이디어나 고민을 그냥 말해 보세요. 일하는 중에도 언제든 말할 수 있어요. (Enter = 보내기)"></textarea>
+      <button class="btn mic" id="mic" title="누르고 말한 뒤 다시 누르기">🎤</button>
+      <button class="btn primary" id="send">보내기</button>
+    </div>
+  </div>
+</main>
+<dialog id="rate">
+  <h2>평가</h2>
+  <div class="q">“이건 혼자서는 못 찾았겠다” 싶은 카드가 있었어?<div class="opts" data-k="found"><button data-v="yes">있었어</button><button data-v="no">없었어</button></div></div>
+  <div class="q">내 아이디어에 도움이 됐어? (1~5)<div class="opts" data-k="helped"></div></div>
+  <div class="q">알아서 일하는 팀 같았어? (1~5)<div class="opts" data-k="agent"></div></div>
+  <div class="q">정보가 너무 많았어? (1 적당 ~ 5 너무 많음)<div class="opts" data-k="overload"></div></div>
+  <textarea id="rateNote" placeholder="좋았던 카드 / 별로였던 점 한 줄"></textarea>
+  <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px"><span id="rateMsg" style="flex:1;color:var(--soft);font-size:13px"></span><button class="btn" id="rateClose">닫기</button><button class="btn primary" id="rateSave">저장</button></div>
+</dialog>
+<script type="module" src="work.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+# Meta Immersive Debugger writes this PC's LAN address and agent token into this asset; commits keep them empty.
+Assets/Resources/DevAgentSettings.asset filter=localonly

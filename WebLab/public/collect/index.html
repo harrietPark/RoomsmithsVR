@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/collect/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Roomsmiths · Your creations</title>
+  <link rel="stylesheet" href="collect.css?v=9">
+  <script type="module" src="model-viewer.min.js"></script>
+  <script type="module" src="collect.js?v=9"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/" class="brand">
+        Roomsmiths
+        <img class="brand-crew" src="crew-cutout.png" alt="" width="156" height="62">
+      </a>
+      <span class="preview-label">Preview</span>
+    </div>
+  </header>
+  <main>
+    <section id="lookup" class="entry">
+      <h1>Bring your creation home.</h1>
+      <p class="lede">Enter the code from your Roomsmiths notebook.</p>
+      <form id="code-form" class="panel" novalidate>
+        <label for="code">Collection code</label>
+        <input id="code" name="code" type="text" maxlength="16" placeholder="ABCD 1234" autocapitalize="characters" autocomplete="off" spellcheck="false" aria-describedby="code-feedback" required>
+        <p id="code-feedback" class="feedback" aria-live="polite"></p>
+        <button class="button primary" type="submit">Open my creations <span aria-hidden="true">→</span></button>
+        <button class="text-button sample" type="button" id="sample">Try the sample collection <span class="sample-code">WAVE 2026</span></button>
+      </form>
+    </section>
+
+    <section id="collection" hidden>
+      <div class="collection-heading">
+        <h1 id="collection-title" tabindex="-1">Your creations</h1>
+        <button id="change-code" type="button" class="button secondary">Change code</button>
+      </div>
+      <ul class="works" id="works"></ul>
+    </section>
+
+    <section id="result" hidden>
+      <nav class="detail-nav" aria-label="Creation navigation">
+        <a class="button secondary back-to-creations" href="#creations"><span aria-hidden="true">←</span> Your creations</a>
+      </nav>
+      <div class="workbench">
+        <figure class="object panel">
+          <div class="model-surface">
+            <model-viewer id="model" alt="" camera-controls interaction-prompt="none" interaction-prompt-style="wiggle" interaction-prompt-threshold="450" touch-action="pan-y" camera-orbit="35deg 67deg 112%" shadow-intensity="0.65" exposure="1.05"></model-viewer>
+            <p class="model-state" id="model-state" aria-live="polite">Loading 3D preview…</p>
+          </div>
+          <figcaption id="rotate-hint" hidden>Drag to rotate</figcaption>
+        </figure>
+        <div class="details panel">
+          <h1 id="work-title" tabindex="-1"></h1>
+          <p class="lede" id="work-description"></p>
+          <time id="work-date" class="creation-date"></time>
+          <div class="format" id="model-formats" hidden>
+            <h2>3D model</h2>
+            <p>GLB keeps colour and texture in one file.</p>
+            <div class="format-buttons" id="model-downloads"></div>
+          </div>
+          <div class="format">
+            <h2>3D printing</h2>
+            <p id="print-description">Open in your slicer.</p>
+            <div class="format-buttons" id="print-downloads"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>Roomsmiths preview · Sample creations</footer>
+  </main>
+</body>
+</html>

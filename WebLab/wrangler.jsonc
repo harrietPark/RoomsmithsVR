@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "roomsmiths",
+  "main": "./cloud-worker.mjs",
+  "compatibility_date": "2026-11-14",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public/collect",
+    "base_path": "/collect",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  },
+  "triggers": { "crons": ["17 * * * *"] },
+  "ratelimits": [
+    { "name": "COLLECT_READS", "namespace_id": "74101", "simple": { "limit": 60, "period": 60 } },
+    { "name": "COLLECT_WRITES", "namespace_id": "74102", "simple": { "limit": 24, "period": 60 } }
+  ]
+}
