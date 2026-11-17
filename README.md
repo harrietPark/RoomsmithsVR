@@ -7,7 +7,7 @@ create personalised 3D objects for your own space.**
 
 Built in Unity for Meta Quest 3 and 3S.
 
-<p align="center"><a href="https://youtu.be/gkSY7PJxXm4"><img src="https://img.youtube.com/vi/gkSY7PJxXm4/maxresdefault.jpg" width="640" alt="Watch the Roomsmiths VR demo on YouTube"></a></p>
+<p align="center"><a href="https://youtu.be/gkSY7PJxXm4"><img src=".github/media/demo-video.jpg" width="640" alt="Watch the Roomsmiths VR demo on YouTube"></a></p>
 
 ## Overview
 
